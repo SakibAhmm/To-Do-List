@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, rgb(70, 95, 96),rgb(14, 65, 49));
+    padding: 10px;
+}
+
+.To-Do-List{
+    width: 100% ;
+    max-width: 540px ;
+    background: rgb(255, 255, 255) ;
+    margin: 100px auto 20px ;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+   border: 5px solid rgb(15, 0, 0);
+}
+
+.To-Do-List h2 {
+    color: rgb(0, 15, 15);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.To-Do-List h2 img {
+width: 35px;  
+margin-left: 10px; 
+
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-family: Cabin Sketch;
+    font-size: 55px;
+    font-weight: 70px;
+    
+    
+
+}
+#input-box{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    
+}
+
+#list-container{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #bfbcbc;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    border-radius: 30px;
+
+}
+input {
+flex: 1;
+border: none;
+outline: none;
+background: transparent;
+padding: 10px;
+font-weight: 14px;
+
+
+}
+
+button {
+    border: none;
+    outline: none;
+    background: #959a96;
+    color: rgb(45, 53, 45);
+    font-size: 15px;
+    border-radius: 40px;
+    padding: 16px 30px;
+    cursor: pointer;
+
+}
+
+button:hover{
+        background: #3ab546;
+
+}
+
+ul li {
+    list-style: none;
+    font-size: 14px ;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+}
+
+ul li::before {
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(Images/60248-200.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+
+ul li.checked{
+
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+
+    background-image: url(Images/Green-check-mark-icon-on-transparent-background-PNG.png);
+
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: rgb(229, 24, 24);
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #e8e3e3;
+}
