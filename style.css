@@ -108,7 +108,7 @@ ul li::before {
     height: 28px;
     width: 28px;
     border-radius: 50%;
-    background-image: url(60248-200.png);
+    background-image: url(Circle.png);
     background-size: cover;
     background-position: center;
     top: 12px;
@@ -124,7 +124,7 @@ ul li.checked{
 
 ul li.checked::before{
 
-    background-image: url(Green-check-mark-icon-on-transparent-background-PNG.png);
+    background-image: url(Green-Check.png);
 
 }
 
